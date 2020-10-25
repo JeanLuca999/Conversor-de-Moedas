@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Moedas</title>
+    <title>Conversor de Moeda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/menu-mobile.css">
-    <link rel="stylesheet" href="css/menu-desktop.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -20,14 +19,39 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="#">GitHub</a>
+                    <a href="https://github.com/jeanluca999" target="_blank" >Meu GitHub</a>
                 </li>
                 <li>
-                    <a href="#">API Utilizada</a>
+                    <a href="https://docs.awesomeapi.com.br/api-de-moedas" target="_blank" >API Utilizada</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <h1>Conversor de Moeda</h1>
+        <div class="container-principal">
+
+            <h2>Quantidade:</h2>
+            <input type="number" id="quantidade" placeholder="EX: 50.00">
+
+            <h2>Escolha moeda:</h2>
+            <select class="escolher-moeda">
+                <option value="nenhum">Moeda</option>
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="CAD">Dólar Canadense</option>
+                <option value="AUD">Dólar Australiano</option>
+                <option value="BTC">Bitcoin</option>
+            </select>
+
+            <button id="converter">Converter</button>
+            <p id="resultado">Resultado</p>
+
+        </div>
+    </main>
+
     <script src="js/menu.js"></script>
+    <script src="js/conversor.js"></script>
 </body>
 </html>
