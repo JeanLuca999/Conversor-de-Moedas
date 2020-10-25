@@ -16,7 +16,7 @@ botaoMenu.addEventListener('click', () => {
 //funções para usar a api
 const btnConverter = document.getElementById('converter')
 const resultado = document.getElementById('resultado')
-let condigoMoeda
+let codigoMoeda
 
 btnConverter.addEventListener('click', () => {
     const moedaSelecionada = document.getElementsByClassName('escolher-moeda')[0].value
